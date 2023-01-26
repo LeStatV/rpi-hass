@@ -2,7 +2,7 @@ DATA_DIR="/usr/local/hassio"
 CFG_FILE="${DATA_DIR}/etc/hassio.json"
 
 # Install tools
-apt-get install jq
+apt-get install -y jq
 
 # Fix install directory
 mkdir -p "${DATA_DIR}"
