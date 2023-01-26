@@ -8,7 +8,7 @@ ReloadPropagatedFrom=docker.service
 [Service]
 Type=simple
 Restart=always
-ExecStart=/usr/local/bin/hassio
+ExecStart=/usr/local/hassio/bin/hassio
 
 [Install]
 WantedBy=multi-user.target

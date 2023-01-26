@@ -10,7 +10,7 @@ mkdir -p "${DATA_DIR}"
 # Prepare files and folders
 mkdir -p ${DATA_DIR}/bin
 cp ./hassio.service /etc/systemd/system
-cp ./hassio.sh ${DATA_DIR}/bin
+cp ./hassio.sh ${DATA_DIR}/bin/hassio
 
 HOMEASSISTANT_DOCKER="homeassistant/qemuarm-64-homeassistant"
 HASSIO_DOCKER="homeassistant/aarch64-hassio-supervisor"
