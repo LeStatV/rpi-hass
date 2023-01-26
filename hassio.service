@@ -1,0 +1,14 @@
+# Contents of /etc/systemd/system/hassio.service
+[Unit]
+Description=Home Assistant Supervisor
+After=docker.service
+BindsTo=docker.service
+ReloadPropagatedFrom=docker.service
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/hassio
+
+[Install]
+WantedBy=multi-user.target
